@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Resolvers Mutations login login unsuccessfully 1`] = `
+Array [
+  [GraphQLError: Validation Error],
+]
+`;
+
+exports[`Resolvers Mutations login login unsuccessfully because user is not found 1`] = `
+Array [
+  [GraphQLError: resource not found],
+]
+`;
+
+exports[`Resolvers Mutations signup it fails validation and returns validation errors 1`] = `
+Array [
+  Object {
+    "message": "username must be at least 1 characters",
+    "path": "username",
+  },
+  Object {
+    "message": "username is required",
+    "path": "username",
+  },
+  Object {
+    "message": "email must be a valid email",
+    "path": "email",
+  },
+  Object {
+    "message": "password must be at least 12 characters",
+    "path": "password",
+  },
+  Object {
+    "message": "Passwords don't match",
+    "path": "confirmPassword",
+  },
+]
+`;
+
+exports[`Resolvers Mutations signup it uses duplicate email and username and returns validation errors 1`] = `
+Array [
+  Object {
+    "message": "somemail@mail.com is already taken",
+    "path": "email",
+  },
+  Object {
+    "message": "name is already taken",
+    "path": "username",
+  },
+]
+`;

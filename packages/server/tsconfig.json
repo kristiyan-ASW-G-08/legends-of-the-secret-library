@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["src/*"],
+      "@schema/*": ["src/schema/*"],
+      "@models/*": ["src/starterPacks/*"],
+      "@services/*": ["src/services/*"],
+      "@customUtilities/*": ["src/utilities/*"],
+      "@dtos/*": ["src/dtos/*"],
+      "@customTypes/*": ["src/types/*"],
+      "@typeDefs/*": ["src/typeDefs/*"],
+      "@resolvers/*": ["src/resolvers/*"],
+      "@users/*": ["src/users/*"],
+    },
+    "target": "es6",
+    "lib": ["esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "preserveSymlinks": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "include": ["./src", "./types"]
+}
